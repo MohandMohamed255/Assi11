@@ -1,0 +1,850 @@
+{
+  "info": {
+    "_postman_id": "6d5cc7f0-d0e9-4c3c-9a1c-3a058703dae4",
+    "name": "Saraha",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57218956"
+  },
+  "item": [
+    {
+      "name": "user",
+      "item": [
+        {
+          "name": "signup",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "fName",
+                  "value": "Seyam",
+                  "type": "text"
+                },
+                {
+                  "key": "lName",
+                  "value": "mohamed",
+                  "type": "text"
+                },
+                {
+                  "key": "email",
+                  "value": "pubgmobile88889@gmail.com",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "123456",
+                  "type": "text"
+                },
+                {
+                  "key": "age",
+                  "value": "22",
+                  "type": "text"
+                },
+                {
+                  "key": "gender",
+                  "value": "male",
+                  "type": "text"
+                },
+                {
+                  "key": "phone",
+                  "value": "01229886251",
+                  "type": "text"
+                },
+                {
+                  "key": "attachment",
+                  "type": "file",
+                  "src": [
+                    "/D:/Hn/5.png"
+                  ]
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{local_url}}/users/signup",
+              "host": [
+                "{{local_url}}"
+              ],
+              "path": [
+                "users",
+                "signup"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "signup",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"fName\": \"Mohand\",\r\n    \"lName\": \"Mohamed\",\r\n    \"email\": \"mohand@gmail.com\",\r\n    \"age\": 22,\r\n    \"password\": \"123456\",\r\n    \"gender\": \"male\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "localhost:3333/users/signup",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3333",
+                  "path": [
+                    "users",
+                    "signup"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "x-powered-by",
+                  "value": "Express"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "content-length",
+                  "value": "348"
+                },
+                {
+                  "key": "etag",
+                  "value": "W/\"15c-VVOYGs7Yur0AvAsQpSC+dWmeJvc\""
+                },
+                {
+                  "key": "date",
+                  "value": "Sat, 26 Sep 2026 16:25:43 GMT"
+                },
+                {
+                  "key": "connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "keep-alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"message\": \"user created Successfully\",\n  \"user\": [\n    {\n      \"fName\": \"Mohand\",\n      \"lName\": \"Mohamed\",\n      \"email\": \"mohand@gmail.com\",\n      \"password\": \"123456\",\n      \"age\": 22,\n      \"gender\": \"male\",\n      \"provider\": \"system\",\n      \"isConfirmed\": false,\n      \"_id\": \"6ab7f207f94dbf45bfae10dd\",\n      \"createdAt\": \"2026-09-26T16:25:43.530Z\",\n      \"updatedAt\": \"2026-09-26T16:25:43.530Z\",\n      \"__v\": 0,\n      \"id\": \"6ab7f207f94dbf45bfae10dd\"\n    }\n  ]\n}"
+            },
+            {
+              "name": "signup",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"fName\": \"Seif\",\r\n    \"lName\": \"Mohamed\",\r\n    \"email\": \"Seif@gmail.com\",\r\n    \"age\": 22,\r\n    \"password\": \"123456\",\r\n    \"gender\": \"male\",\r\n    \"phone\":\"01229886251\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "localhost:3333/users/signup",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3333",
+                  "path": [
+                    "users",
+                    "signup"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "x-powered-by",
+                  "value": "Express"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "content-length",
+                  "value": "420"
+                },
+                {
+                  "key": "etag",
+                  "value": "W/\"1a4-YZ8qo3/at/iGgriPpxSs5oWlmf4\""
+                },
+                {
+                  "key": "date",
+                  "value": "Thu, 01 Oct 2026 16:24:45 GMT"
+                },
+                {
+                  "key": "connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "keep-alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"message\": \"user created Successfully\",\n  \"user\": [\n    {\n      \"fName\": \"Seif\",\n      \"lName\": \"Mohamed\",\n      \"email\": \"seif@gmail.com\",\n      \"password\": \"123456\",\n      \"age\": 22,\n      \"gender\": \"male\",\n      \"phone\": \"304934ac38d3c60a687f274104ffb22b:c7bf155ea9ec089f240633878d9a49eb\",\n      \"provider\": \"system\",\n      \"isConfirmed\": false,\n      \"_id\": \"6abe894d6b779fdcbedc859d\",\n      \"createdAt\": \"2026-10-01T16:24:45.819Z\",\n      \"updatedAt\": \"2026-10-01T16:24:45.819Z\",\n      \"__v\": 0,\n      \"id\": \"6abe894d6b779fdcbedc859d\"\n    }\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "signin",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "let response=pm.response.json();\r\npm.environment.set(\"access_token\",response.tokens.access_token)\r\npm.environment.set(\"refresh_token\",response.tokens.refresh_token)"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"pubgmobile88889@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{local_url}}/users/signin",
+              "host": [
+                "{{local_url}}"
+              ],
+              "path": [
+                "users",
+                "signin"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "signin",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"email\": \"mohand@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "localhost:3333/users/signin",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3333",
+                  "path": [
+                    "users",
+                    "signin"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "x-powered-by",
+                  "value": "Express"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "content-length",
+                  "value": "325"
+                },
+                {
+                  "key": "etag",
+                  "value": "W/\"145-GG8riUXBshSq0CmhiPZ9GTD4LbM\""
+                },
+                {
+                  "key": "date",
+                  "value": "Sat, 26 Sep 2026 17:21:20 GMT"
+                },
+                {
+                  "key": "connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "keep-alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n  \"message\": \"Done\",\n  \"user\": {\n    \"_id\": \"6ab7f207f94dbf45bfae10dd\",\n    \"fName\": \"Mohand\",\n    \"lName\": \"Mohamed\",\n    \"email\": \"mohand@gmail.com\",\n    \"password\": \"123456\",\n    \"age\": 22,\n    \"gender\": \"male\",\n    \"provider\": \"system\",\n    \"isConfirmed\": false,\n    \"createdAt\": \"2026-09-26T16:25:43.530Z\",\n    \"updatedAt\": \"2026-09-26T16:25:43.530Z\",\n    \"__v\": 0,\n    \"id\": \"6ab7f207f94dbf45bfae10dd\"\n  }\n}"
+            }
+          ]
+        },
+        {
+          "name": "profile",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "{{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"token\": \"\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{local_url}}/users/profile",
+              "host": [
+                "{{local_url}}"
+              ],
+              "path": [
+                "users",
+                "profile"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "new access token",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "authorization",
+                "value": "{{refresh_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{local_url}}/users/refresh-token",
+              "host": [
+                "{{local_url}}"
+              ],
+              "path": [
+                "users",
+                "refresh-token"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "token",
+                "value": "{{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"fName\":\"SeYam\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{local_url}}/users/update-profile",
+              "host": [
+                "{{local_url}}"
+              ],
+              "path": [
+                "users",
+                "update-profile"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "updatePassword",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "token",
+                "value": "{{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"oldPassword\":\"hn1234\",\r\n    \"newPassword\":\"hn@1234\",\r\n    \"cPassword\":\"hn@1234\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{local_url}}/users/update-password",
+              "host": [
+                "{{local_url}}"
+              ],
+              "path": [
+                "users",
+                "update-password"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "logout",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "token",
+                "value": "{{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{local_url}}/users/logout?flag=all",
+              "host": [
+                "{{local_url}}"
+              ],
+              "path": [
+                "users",
+                "logout"
+              ],
+              "query": [
+                {
+                  "key": "flag",
+                  "value": "all"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "confirm email",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "token",
+                "value": "{{access_token}}",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\":\"pubgmobile88889@gmail.com\",\r\n    \"otp\":\"5039\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{local_url}}/users/confirm-email",
+              "host": [
+                "{{local_url}}"
+              ],
+              "path": [
+                "users",
+                "confirm-email"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "resendotp",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\":\"pubgmobile388889@gmail.com\"    \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{local_url}}/users/reSendOtp",
+              "host": [
+                "{{local_url}}"
+              ],
+              "path": [
+                "users",
+                "reSendOtp"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "forget_password",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\":\"pubgmobile388889@gmail.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{local_url}}/users/forget-password",
+              "host": [
+                "{{local_url}}"
+              ],
+              "path": [
+                "users",
+                "forget-password"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "resetpassword",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\":\"pubgmobile388889@gmail.com\",\r\n    \"password\":\"11111\",\r\n    \"code\":\"7350\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{local_url}}/users/reset-password",
+              "host": [
+                "{{local_url}}"
+              ],
+              "path": [
+                "users",
+                "reset-password"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "messages",
+      "item": [
+        {
+          "name": "sendMessage",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "{{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "content",
+                  "value": "kiss my head",
+                  "type": "text"
+                },
+                {
+                  "key": "receiverId",
+                  "value": "6ad8a501ca578d14c5a4545d",
+                  "type": "text"
+                },
+                {
+                  "key": "attachments",
+                  "type": "file",
+                  "src": [
+                    "/D:/Hn/3.png"
+                  ]
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{local_url}}/messages/send",
+              "host": [
+                "{{local_url}}"
+              ],
+              "path": [
+                "messages",
+                "send"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getallmessagebytoken",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "{{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{local_url}}/messages/",
+              "host": [
+                "{{local_url}}"
+              ],
+              "path": [
+                "messages",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getSenderMessage",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "{{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"messageId\":\"6addf1fb07e75bdc747544c1\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{local_url}}/messages/sender",
+              "host": [
+                "{{local_url}}"
+              ],
+              "path": [
+                "messages",
+                "sender"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "send Request",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "{{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"messageId\":\"6ae10f90a48ff04d4a5f8211\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{local_url}}/messages/request-sender",
+              "host": [
+                "{{local_url}}"
+              ],
+              "path": [
+                "messages",
+                "request-sender"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get requests",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "{{access_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{local_url}}/messages/requests",
+              "host": [
+                "{{local_url}}"
+              ],
+              "path": [
+                "messages",
+                "requests"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "respond",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "token",
+                "value": "{{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"messageId\":\"6ae10f90a48ff04d4a5f8211\",\r\n    \"action\":\"accepted\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{local_url}}/messages/requests/respond",
+              "host": [
+                "{{local_url}}"
+              ],
+              "path": [
+                "messages",
+                "requests",
+                "respond"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Conversation",
+      "item": [
+        {
+          "name": "geteconv",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "{{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{local_url}}/conversations",
+              "host": [
+                "{{local_url}}"
+              ],
+              "path": [
+                "conversations"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "sendChatinconv",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "{{access_token}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"content\":\"hala wala\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{local_url}}/conversations/6ae10fd8a48ff04d4a5f8212/messages",
+              "host": [
+                "{{local_url}}"
+              ],
+              "path": [
+                "conversations",
+                "6ae10fd8a48ff04d4a5f8212",
+                "messages"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
